@@ -54,8 +54,37 @@ spring.datasource.password=your_mysql_password
 ```
 Or in IDE: Run ```AiSafetyIncidentApplication.java```
 
+The server will start at: **http://localhost:8082**
 
 ## 🌐 API Endpoints
 
 ### 1. Get All incidents
-- # Method # -> **`GET`**
+- Method: **`GET`**
+- EndPoint: **`/incidents`**
+- Response: **`200 OK`** with list of all incidents
+
+### 2. Get incident By ID
+- Method: **`GET`**
+- EndPoint: **`/incidents/{id}`**
+- Success Response: **`200 OK`**
+- Error Response: **`404 Not Found`** if ID does not exist
+
+### 3. Create a new incident
+- Method: **`POST`**
+- EndPoint: **`/incidents`**
+- Request Body:
+  ```json
+  {
+  "title": "your_title",
+  "description": "your_description",
+  "severity": "Low/Medium/High"
+  }
+  ```
+- Success Response: **`201 Created`**
+- Error Response: **`404 Bad Request`** (missing fields or invalid severity)
+
+### 4. Delete an incident by ID
+- Method: **`DELETE`*
+- EndPoint: **`/incidents/{id}`**
+- Success Response: **`204 No Content`**
+- Error Response: **`404 Not Found`**
