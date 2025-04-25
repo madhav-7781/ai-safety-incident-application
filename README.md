@@ -95,7 +95,7 @@ The server will start at: **http://localhost:8082**
 ## 🧪 Example cURL Requests
 ```bash
 # Create new incident
-curl -X POST http://localhost:8081/incidents \
+curl -X POST http://localhost:8082/incidents \
 -H "Content-Type: application/json" \
 -d '{"title": "Test", "description": "Test incident", "severity": "Low"}'
 
