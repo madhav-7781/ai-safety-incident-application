@@ -100,11 +100,11 @@ curl -X POST http://localhost:8081/incidents \
 -d '{"title": "Test", "description": "Test incident", "severity": "Low"}'
 
 # Get all incidents
-curl http://localhost:8081/incidents
+curl http://localhost:8082/incidents
 
 # Get incident by ID
-curl http://localhost:8081/incidents/1
+curl http://localhost:8082/incidents/1
 
 # Delete incident by ID
-curl -X DELETE http://localhost:8081/incidents/1
+curl -X DELETE http://localhost:8082/incidents/1
 ```
