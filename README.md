@@ -84,7 +84,7 @@ The server will start at: **http://localhost:8082**
 - Error Response: **`404 Bad Request`** (missing fields or invalid severity)
 
 ### 4. Delete an incident by ID
-- Method: **`DELETE`*
+- Method: **`DELETE`**
 - EndPoint: **`/incidents/{id}`**
 - Success Response: **`204 No Content`**
 - Error Response: **`404 Not Found`**
