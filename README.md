@@ -88,3 +88,21 @@ The server will start at: **http://localhost:8082**
 - EndPoint: **`/incidents/{id}`**
 - Success Response: **`204 No Content`**
 - Error Response: **`404 Not Found`**
+
+
+## 🧪 Example cURL Requests
+```bash
+# Create new incident
+curl -X POST http://localhost:8081/incidents \
+-H "Content-Type: application/json" \
+-d '{"title": "Test", "description": "Test incident", "severity": "Low"}'
+
+# Get all incidents
+curl http://localhost:8081/incidents
+
+# Get incident by ID
+curl http://localhost:8081/incidents/1
+
+# Delete incident by ID
+curl -X DELETE http://localhost:8081/incidents/1
+```
