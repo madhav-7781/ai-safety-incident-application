@@ -19,6 +19,7 @@ Make sure you add these dependencies when generating the project using [https://
 
 - Spring Web
 - Spring Data JPA
+- Lombok
 - MySQL Driver
 - Validation (Jakarta Bean Validation)
 
