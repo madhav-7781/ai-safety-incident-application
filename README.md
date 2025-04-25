@@ -38,6 +38,7 @@ cd sparklehood-incident-log
 ```sql
 CREATE DATABASE sparklehood_db;
 ```
+Firstly create your database as ```sparklehood_db```
 Ensure MySQL is running and accessible.
 
 
